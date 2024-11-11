@@ -1,59 +1,47 @@
-/* Основной стиль страницы:
-Установите глобальный шрифт Arial, sans-serif для всего документа.
-Установите цвет фона страницы #f8f9fa (светло-серый).
-Стилизуйте заголовки h1 и h2, увеличив размер шрифта и изменив цвет.*/
-
+/* Основные стили страницы */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
   }
 
 h1 {
-    margin: 0;
-    font-size: 40px;
-/* Фон и текст:
-Добавьте градиентный фон для заголовка h1, например, от светло-синего к темно-синему.
-Сделайте текст заголовка белым.*/
-    background: linear-gradient(to bottom, #add8e6, #00008b);
-    color: white;
+  margin: 0;
+  font-size: 40px;
+  background: linear-gradient(to bottom, #add8e6, #00008b);
+  color: white;
   }
 
 h2 {
-    /* font-size: 30px; */
-    color: rgb(202, 190, 22);
-    }
+  font-size: 30px;
+  color: #b3a817;
+  }
 
-/* Часть 2: Навигационное меню
-Стилизация меню:
-Удалите стандартные маркеры списка и выровняйте пункты меню по горизонтали.
-Добавьте отступы между пунктами меню и измените цвет ссылок на синий.
-Добавьте эффект изменения цвета при наведении на ссылку.*/
+/* Стилизация меню */
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-}
+  margin: 10px 0 10px 0;
+  }
 
 .header__nav {
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  margin: 10px 0 10px 0;
-}
+  }
 
 .header__list {
   display: flex;
-}
+  }
 
 .header__item {
   margin-right: 60px;
-}
+  }
 
 .header__item:last-child {
   margin-right: 0;
-}
+  }
 
 a {
   color: #0733C4;
@@ -61,28 +49,23 @@ a {
 
 a:hover {
   color: #b3a817;
-}
+  }
 
-/* Часть 3: Стилизация секций
-Секция intro:
-Установите цвет фона секции #007bff (синий) и белый цвет текста.
-Добавьте внутренние отступы (padding) и выровняйте текст по центру.*/
+/* Стили для секции intro */
 
 .intro {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    }
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  }
 
-/* Секция content:
-Установите белый фон и добавьте тень для выделения.
-Выровняйте секцию по центру и добавьте отступы внутри (padding). */
-
+/* Стили для секции content */
 .content {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
-    width: 800px;
-    padding: 30px;
-    margin: 0 auto;
-    }
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(46, 12, 121, 0.8);
+  width: 800px;
+  padding: 30px;
+  margin: 0 auto;
+  }
